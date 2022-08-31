@@ -6,9 +6,9 @@ import csv
 import os
 
 # Add a variable to load a file from a path.
-file_to_load = 'C:\Users\Ryan Satterfield\Documents\GitHub\PyPollProject\Resources\election_results.csv'
+file_to_load = 'C:\\Users\\Ryan Satterfield\\Documents\\GitHub\\PyPollProject\\Resources\\election_results.csv'
 # Add a variable to save the file to a path.
-file_to_save = 'C:\Users\Ryan Satterfield\Documents\GitHub\PyPollProject\Resources\election_analysis.txt'
+file_to_save = 'C:\\Users\\Ryan Satterfield\\Documents\\GitHub\\PyPollProject\\Resources\\election_analysis.txt'
 
 #OS module kept throwing errors so i just saved the path as full.
 
@@ -27,11 +27,12 @@ county_votes = {}
 # Track the winning candidate, vote count and percentage
 winning_candidate = ""
 winning_count = 0
-winning_percentage = 0
+winning_c_percentage = 0
 
 # 2: Track the largest county and county voter turnout.
-turnout_county = ""
-turnout_votes = 0 
+winning_county = ""
+county_count = 0
+county_percentage = 0 
 
 # Read the csv and convert it into a list of dictionaries
 with open(file_to_load) as election_data:
@@ -109,7 +110,7 @@ with open(file_to_save, "w") as txt_file:
          # 6e: Save the county votes to a text file.
         txt_file.write(county_results)
          # 6f: Write a decision statement to determine the winning county and get its vote count.
-        if (county > winning_county) and (county_percentage > winning_c_percentage):
+        if (county > winning_count) and (county_percentage > winning_c_percentage):
             winning_county = county
             winning_c_candidate = county_name
             winning_c_percentage = county_percentage
@@ -144,7 +145,7 @@ with open(file_to_save, "w") as txt_file:
         txt_file.write(candidate_results)
 
         # Determine winning vote count, winning percentage, and candidate.
-        if (votes > winning_count) and (vote_percentage > winning_percentage):
+        if (votes > winning_count) and (vote_percentage > winning_c_percentage):
             winning_count = votes
             winning_candidate = candidate_name
             winning_percentage = vote_percentage
@@ -154,7 +155,7 @@ with open(file_to_save, "w") as txt_file:
         f"\n-------------------------\n"
         f"Winner: {winning_candidate}\n"
         f"Winning Vote Count: {winning_count:,}\n"
-        f"Winning Percentage: {winning_percentage:.1f}%\n"
+        f"Winning Percentage: {winning_c_percentage:.1f}%\n"
         f"-------------------------\n")
     print(winning_candidate_summary)
 

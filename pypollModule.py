@@ -7,7 +7,16 @@
 #headers inclued Ballot_ID, County, Candidate
 
 #imports
-import
+import os 
+import csv
+import time
+
+file_to_load = "Resources/election_results.csv"
+election_data = open(file_to_load, "r")
+#perform analysis then close
+with open(file_to_load) as election_data:
+    print(election_data)
+election_data.close()
 
 #FUNCTIONS
 
