@@ -27,6 +27,8 @@ The Board of Elections in Colorado has asked us to conduct an audit of the recen
 
 ## Results
 - Denver county had the largest voter turnout with 306,055 votes (82.8%).  Figure below shows the outcome between the three.
+
+
 ![Employee data](Resources/CountyVotes.png "Employee Data title")
 
 - Here are the county results written in plain text:
@@ -36,6 +38,8 @@ The Board of Elections in Colorado has asked us to conduct an audit of the recen
 
 
 - Diana DeGette had the largest number of votes at 272,892 (73.8%).  Figure below shows a breakdown of the votes by candidate.
+
+
 ![Employee data](Resources/CanVotes.png "Employee Data title")
 
 - Here are the candidate results written in plain text:
