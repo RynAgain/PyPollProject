@@ -27,25 +27,25 @@ The Board of Elections in Colorado has asked us to conduct an audit of the recen
 
 ## Results
 - Denver county had the largest voter turnout with 306,055 votes (82.8%).  Figure below shows the outcome between the three.
-(insert picture here)
+![Employee data](Resources/CountyVotes.png "Employee Data title")
 
-Here are the county results written in plain text:
+- Here are the county results written in plain text:
     - Jefferson: 38,855 votes (10.5%)
     - Denver 306,055 votes (82.8%)
     - Arapahoe 24,801 (6.7%)
 
 
 - Diana DeGette had the largest number of votes at 272,892 (73.8%).  Figure below shows a breakdown of the votes by candidate.
-(insert picture here)
+![Employee data](Resources/CanVotes.png "Employee Data title")
 
-Here are the candidate results written in plain text:
+- Here are the candidate results written in plain text:
     - Charles Casper Stockham: 23.0% (85,213)
     - Diana DeGette: 73.8% (272,892)
     - Raymon Anthony Doane: 3.1% (11,606)
 
-The winner of the election was:
+- The winner of the election was:
     - Diana DeGette with 272,892 votes (73.8%)
-(insert picture here)
+
 
 # Audit Summary 
 The code should be already prepared to be reused.  All you'd have to do is provide a new csv file of results with the same data structure as the original.  Then just update the path of the results file to the new one.  If you wanted to get real fancy about it you could rewrite the code to except an input as the path.  If you wanted to get really really fancy you could use the tkinter module to create a GUI interface that would make it even easier to input a path name. 
